@@ -1,0 +1,37 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.social-items{
+    list-style-type: none;
+}
+
+.social-link{
+    padding: 0.5rem;
+}
+
+.social-icon{
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    fill: var(--secondarycolor);
+}
+
+.social-icon:hover{
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-duration: 1000ms;
+}
+
+.footer-text{
+    text-align: center;
+}

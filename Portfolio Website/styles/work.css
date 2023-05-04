@@ -1,0 +1,140 @@
+.work-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10rem;
+    *height:100vh;*/
+
+}
+
+.work-title{
+    display:flex;
+    align-items: center;
+    color: var(--secondarycolor);
+    font-size: var(--text-xl);
+    font-weight: 600;
+}
+
+.work-title>span{
+    font-size: var(--text-base);
+    padding-right: 16px;
+    color: var(--primarygray);
+}
+
+
+.work-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom:2.5rem;
+}
+
+.work-card{
+    position:relative;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.project-container{
+    padding: 2.5rem 2.5rem 2rem;
+    z-index: 10;
+}
+
+
+.project-title{
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    color: var(--secondarycolor)
+}
+
+.project-title:hover{
+    color:var(--primarygray)
+}
+
+.project-description{
+    padding: 1.25rem 0;
+}
+
+.project-technologies{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: var(--text-sm);
+    font-weight:300;
+    margin: 0.625rem 0;
+}
+
+.project-links{
+    display: flex;
+    align-items:center;
+    margin-top: 1.25rem;
+}
+
+.project-links > img {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--secondarycolor);
+    border-radius: 10px;
+}
+
+.project-links >img:hover{
+    background-color: white;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-duration: 1000ms;
+}
+
+.project-technologies>li{
+    list-style-type: none;
+    margin: 0 0.625rem 0.25rem 0;
+}
+
+.project-image{
+    position: absolute;
+    inset:0;
+    opacity: 10%;
+    z-index: -1;
+}
+
+
+.project-image>img{
+    object-fit: cover;
+    height: 100%;
+    width:100%;
+    border-radius:25px;
+    
+}
+
+@media (min-width:640px){
+   
+    .work-title{
+        font-size: var(--text-2xl);
+    }
+    
+    .work-title>span{
+        font-size: var(--text-lg);
+        
+    }
+}
+
+@media (min-width:768px){
+   
+    .work-title{
+        font-size: var(--text-3xl);
+    }
+    
+    .work-title>span{
+        font-size: var(--text-xl);
+        
+    }
+}
+
+@media (min-width:1024px){
+   
+    .work-cards{
+        grid-template-columns: 1fr 1fr;
+        gap:2.5rem;
+    }
+    
+}
